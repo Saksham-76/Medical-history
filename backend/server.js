@@ -6,11 +6,11 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-// Middleware
+// Middleware Part
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB Connection
+// MongoDB Connection part
 mongoose.connect("mongodb://localhost:27017/medicalHistoryDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -22,7 +22,7 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
-// Define Schema and Model
+// Defining Schema
 const medicalHistorySchema = new mongoose.Schema({
   height: String,
   weight: String,
@@ -38,21 +38,18 @@ const medicalHistorySchema = new mongoose.Schema({
     plastic: Boolean,
     sedative: Boolean,
     sleepingPills: Boolean,
-    others: String,
   },
   surgeries: {
     appendix: Boolean,
     heart: Boolean,
     bladder: Boolean,
     liver: Boolean,
-    others: String,
   },
   medicalConditions: {
     diabetes: Boolean,
     heart: Boolean,
     bloodPressure: Boolean,
     stroke: Boolean,
-    others: String,
   },
   habits: {
     smoke: Boolean,
