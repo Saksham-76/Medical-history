@@ -18,21 +18,18 @@ const MedicalForm = () => {
       plastic: false,
       sedative: false,
       sleepingPills: false,
-      others: "",
     },
     surgeries: {
       appendix: false,
       heart: false,
       bladder: false,
       liver: false,
-      others: "",
     },
     medicalConditions: {
       diabetes: false,
       heart: false,
       bloodPressure: false,
       stroke: false,
-      others: "",
     },
     habits: {
       smoke: false,
