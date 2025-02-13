@@ -19,21 +19,21 @@ const MedicalForm = () => {
       sedative: false,
       sleepingPills: false,
     },
-    others1: "",
+    OthersForAllergies: "",
     surgeries: {
       appendix: false,
       heart: false,
       bladder: false,
       liver: false,
     },
-    others2: "",
+    OthersForSurgeries: "",
     medicalConditions: {
       diabetes: false,
       heart: false,
       bloodPressure: false,
       stroke: false,
     },
-    others3: "",
+    OthersForMedicalCondition: "",
     habits: {
       smoke: false,
       drink: false,
@@ -145,8 +145,8 @@ const MedicalForm = () => {
           <label>Others:</label>
           <input
             type="text"
-            name="others1"
-            value={formData.others1}
+            name="OthersForAllergies"
+            value={formData.OthersForAllergies}
             onChange={handleChange}
           />
         </div>
@@ -172,8 +172,8 @@ const MedicalForm = () => {
           <label>Others:</label>
           <input
             type="text"
-            name="others2"
-            value={formData.others2}
+            name="OthersForSurgeries"
+            value={formData.OthersForSurgeries}
             onChange={handleChange}
           />
         </div>
@@ -199,8 +199,8 @@ const MedicalForm = () => {
           <label>Others:</label>
           <input
             type="text"
-            name="others3"
-            value={formData.others3}
+            name="OthersForMedicalCondition"
+            value={formData.OthersForMedicalCondition}
             onChange={handleChange}
           />
         </div>
