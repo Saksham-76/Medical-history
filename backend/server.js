@@ -39,18 +39,21 @@ const medicalHistorySchema = new mongoose.Schema({
     sedative: Boolean,
     sleepingPills: Boolean,
   },
+  others1: String,
   surgeries: {
     appendix: Boolean,
     heart: Boolean,
     bladder: Boolean,
     liver: Boolean,
   },
+  others2: String,
   medicalConditions: {
     diabetes: Boolean,
     heart: Boolean,
     bloodPressure: Boolean,
     stroke: Boolean,
   },
+  others3: String,
   habits: {
     smoke: Boolean,
     drink: Boolean,
