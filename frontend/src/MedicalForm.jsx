@@ -19,18 +19,21 @@ const MedicalForm = () => {
       sedative: false,
       sleepingPills: false,
     },
+    others1: "",
     surgeries: {
       appendix: false,
       heart: false,
       bladder: false,
       liver: false,
     },
+    others2: "",
     medicalConditions: {
       diabetes: false,
       heart: false,
       bloodPressure: false,
       stroke: false,
     },
+    others3: "",
     habits: {
       smoke: false,
       drink: false,
@@ -138,6 +141,15 @@ const MedicalForm = () => {
             </div>
           ))}
         </div>
+        <div className="form-group others">
+          <label>Others:</label>
+          <input
+            type="text"
+            name="others1"
+            value={formData.others1}
+            onChange={handleChange}
+          />
+        </div>
 
         {/* Part 3: Surgeries */}
         <h3>Surgeries</h3>
@@ -156,6 +168,15 @@ const MedicalForm = () => {
             </div>
           ))}
         </div>
+        <div className="form-group others">
+          <label>Others:</label>
+          <input
+            type="text"
+            name="others2"
+            value={formData.others2}
+            onChange={handleChange}
+          />
+        </div>
 
         {/* Part 4: Medical Conditions */}
         <h3>Medical Conditions</h3>
@@ -173,6 +194,15 @@ const MedicalForm = () => {
               </label>
             </div>
           ))}
+        </div>
+        <div className="form-group others">
+          <label>Others:</label>
+          <input
+            type="text"
+            name="others3"
+            value={formData.others3}
+            onChange={handleChange}
+          />
         </div>
 
         {/* Part 5: Habits */}
