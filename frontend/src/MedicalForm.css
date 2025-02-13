@@ -19,37 +19,57 @@ body {
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #000000;
   margin-bottom: 20px;
+  background-color: rgb(0, 170, 255);
+  border: solid black 2px;
+  box-shadow: 5px 5px 5px 5px rgb(202, 232, 237);
+  border-radius: 10px;
 }
 
 h3 {
-  color: #555;
+  color: #131212;
+  font-size: 22px;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 5px 5px;
+  background-color: rgb(147, 232, 245);
+  border: solid black 2px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(202, 232, 237);
+  text-align: center;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+
+.others {
+  margin-right: 60px;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: #000000;
   font-weight: bold;
 }
 
 input[type="text"] {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 2px solid #000000;
   border-radius: 4px;
   font-size: 14px;
+  box-shadow: 0px 0px 5px 5px rgb(202, 232, 237);
+  background-color: white;
+  color: black;
 }
 
 .checkbox-group {
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 input[type="checkbox"] {
